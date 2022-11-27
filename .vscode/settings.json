@@ -1,0 +1,73 @@
+{
+  "eslint.nodePath": "./node_modules/eslint",
+  "eslint.run": "onSave",
+  // "eslint.alwaysShowStatus": true,
+  // "javascript.format.enable": false,
+  // "editor.formatOnSave": true,
+  // "editor.codeActionsOnSave": {
+  //   "source.fixAll.eslint": true
+  // },
+  "search.exclude": {
+    "**/node_modules": false
+  },
+  // "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "cSpell.words": [
+    "algolia",
+    "Btns",
+    "deeplink",
+    "Entypo",
+    "firestore",
+    "gameheader",
+    "geopoint",
+    "haptics",
+    "ionicons",
+    "Ipad",
+    "iphone",
+    "Millisec",
+    "nologin",
+    "Oembed",
+    "passcode",
+    "scrollable",
+    "spolive",
+    "testflight",
+    "verifiedlogin",
+    "webrtc",
+    "wordlink"
+  ],
+  "yaml.customTags": [
+    "!And",
+    "!And sequence",
+    "!If",
+    "!If sequence",
+    "!Not",
+    "!Not sequence",
+    "!Equals",
+    "!Equals sequence",
+    "!Or",
+    "!Or sequence",
+    "!FindInMap",
+    "!FindInMap sequence",
+    "!Base64",
+    "!Join",
+    "!Join sequence",
+    "!Cidr",
+    "!Ref",
+    "!Sub",
+    "!Sub sequence",
+    "!GetAtt",
+    "!GetAZs",
+    "!ImportValue",
+    "!ImportValue sequence",
+    "!Select",
+    "!Select sequence",
+    "!Split",
+    "!Split sequence"
+  ],
+  "java.configuration.updateBuildConfiguration": "interactive",
+  "buck.projectConfig": {
+    "projectPath": "/Users/ryuheishima/workspace/spolive/app/node_modules/react-native-scrollable-tab-view/Example",
+    "flavor": [],
+    "target": "",
+    "platform": "linux-x86_64"
+  }
+}
