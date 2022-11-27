@@ -12,27 +12,20 @@ import { StyleSheet, View } from "react-native";
 
 export function GestureHandler() {
   const x = useSharedValue(0);
-  const y = useSharedValue(0);
 
   const gestureHandler = useAnimatedGestureHandler<
     PanGestureHandlerGestureEvent,
-    { startX: number; startY: number; prevX: number; prevY: number }
+    { startX: number;}
   >({
-    onStart: (_, obj) => {
-      obj.startX = x.value;
-      obj.startY = y.value;
+    onStart: (_, context) => {
+      context.startX = x.value;
     },
-    onActive: (event, obj) => {
-      x.value = obj.startX + event.translationX;
-      y.value = obj.startY + event.translationY;
-      const a: any = {}
-      a.prevX = x.value;
-      a.prevY = y.value;
-      console.log("obj", obj);
+    onActive: (event, context) => {
+      console.log("context", context);
+      // x.value = context.startX + event.translationX;
     },
-    onEnd: (_, obj) => {
-      x.value = withSpring(0);
-      y.value = withSpring(0);
+    onEnd: (_) => {
+      // x.value = withSpring(0);
     },
   });
 
@@ -41,10 +34,7 @@ export function GestureHandler() {
       transform: [
         {
           translateX: x.value,
-        },
-        {
-          translateY: y.value,
-        },
+        }
       ],
     };
   });
